@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Paws - El lugar de tus mascotas</title>
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<!-- BODY -->
+
+<body>
+
+    <!-- CONTENEDOR -->
+    <div class="contenedor">
+        <!-- NAV -->
+        <nav class="navBar" id="mainNav">
+            <a href="../index.html">
+                <img src="../img/Logo.svg" alt="Logo de Happy paws - El lugar de tus mascotas ">
+            </a>
+            <ul>
+                <li>
+                    <a href="productos.html">Productos</a>
+                </li>
+                <li>
+                    <a href="promociones.html">Promociones</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- HEADER -->
+        <header id="header">
+            <img src="../img/ConsultaPuppies.jpeg" alt="Logo de Happy paws - El lugar de tus mascotas ">
+        </header>
+
+
+        <!-- SECCION CONTACTOS -->
+        <section id="contacto">
+            <form action="envio.php" class="form">
+                <h2 class="title">Contactanos:</h2>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="Nombre" placeholder="Nombre Apellido">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="mailmail@mail.com">
+                <label for="telefono">Telefono:</label>
+                <input type="number" id="telefono" placeholder="11113333">
+                <label for="mensaje">Consulta o mensaje:</label>
+                <textarea name="textBox" id="mensaje" cols="30" rows="10"></textarea>
+                <input type="reset" value="Cancelar">
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <!-- SECCION MAPA -->
+        <section id="mapa">
+            <div class="mapaFlex">
+                <h2 class="title">Encontranos en nuestra sucursal:</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26269.769176271322!2d-58.497591143854315!3d-34.61121219687287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9c29639d769%3A0x28098a82e56d4110!2sCamarones%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653869819378!5m2!1ses-419!2sar"
+                    width="40%" height="auto" style="border: double 2px black; margin-bottom: 10px;" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="pie" id="footer">
+            <h4 class="pieText">Seguinos en nuestras redes sociales:</h4>
+            <div>
+                <a href="https://www.facebook.com/">
+                    <img src="../img/Facebook.svg" alt="Enlace a Facebook">
+                </a>
+                <a href="https://www.twitter.com/">
+                    <img src="../img/Twitter.svg" alt="Enlace a Twitter">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="../img/Instagram.svg" alt="Enlace a Instagram">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
+<!-- FIN -->
