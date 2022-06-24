@@ -101,10 +101,18 @@ body {
                 text-decoration: none;
                 font-size: 0.7rem;
                 font-weight: 500;
+                /*Animacion de subrayado*/
+                    background-image: linear-gradient(currentColor, currentColor);
+                    background-position: 0% 100%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 2px;
+                    transition: background-size .3s ;
             }
 
             .navBar ul li a:hover {
                 font-weight: 800;
+                /*Animacion de subrayado*/
+                background-size: 100% 2px;
             }
 
 /* Estilos para encabezado */
@@ -227,7 +235,7 @@ header img {
         width: 30px;
     }
 
-/*========= media queries ==========*/
+/* ================ media queries ================ */
 @media (min-width: 768px) {
     .contenedor{
         grid-template-columns: 50vw 40vw;
@@ -295,3 +303,5 @@ header img {
         margin: 5px;
     }
 }
+
+

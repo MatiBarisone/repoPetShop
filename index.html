@@ -10,6 +10,7 @@
     <title>Happy Paws - El lugar de tus mascotas</title>
     <link rel="shortcut icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 
 <!-- BODY -->
@@ -41,14 +42,14 @@
         </nav>
 
         <!-- HEADER -->
-        <header class="encabezado" id="header">
-            <img src="img/juguetes.svg" alt="Foto mostrando a un perro disfutando de su jugete nuevo">
+        <header class="encabezado wow rotateInUpLeft" id="header">
+            <img src="img/header1.svg" alt="Foto mostrando a un perro disfutando de su jugete nuevo">
         </header>
 
         <!-- SECCION PRODUCTOS -->
         <section id="productos">
             <h2 class="title">Productos:</h2>
-            <div class="galeria">
+            <div class="galeria wow fadeInDown">
                 <figure>
                     <img src="img/juguete1.svg" alt="juguete de perro 1, forma de cono rellenable">
                     <figcaption>Juguete rellenable forma de cono - Marca Kong</figcaption>
@@ -65,7 +66,7 @@
                     <p>$1.600,00</p>
                 </figure>
             </div>
-            <div class="galeria">
+            <div class="galeria wow fadeInUp">
                 <figure>
                     <img src="img/juguete4.svg" alt="pelota rellenable">
                     <figcaption>Pelota rellenable</figcaption>
@@ -85,7 +86,7 @@
         </section>
 
         <!-- SECCION CONTACTOS -->
-        <section id="contacto">
+        <section class="wow fadeInLeft" id="contacto">
             <form action="envio.php" class="form">
                 <h2 class="title">Contactanos:</h2>
                 <label for="nombre">Nombre:</label>
@@ -102,7 +103,7 @@
         </section>
 
         <!-- SECCION MAPA -->
-        <section id="mapa">
+        <section class="wow fadeInRight" id="mapa">
             <div class="mapaFlex">
                 <h2 class="title">Encontranos en nuestra sucursal:</h2>
                 <iframe
@@ -128,8 +129,13 @@
                 </a>
             </div>
         </footer>
-
     </div>
+
+    <!-- SCRIPTS -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
