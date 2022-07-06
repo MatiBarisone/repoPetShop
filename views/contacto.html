@@ -9,86 +9,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Paws - El lugar de tus mascotas</title>
     <link rel="shortcut icon" href="../img/favicon.png">
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- MY CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <!-- BODY -->
 
 <body>
 
-    <!-- CONTENEDOR -->
-    <div class="contenedor">
-        <!-- NAV -->
-        <nav class="navBar" id="mainNav">
-            <a href="../index.html">
-                <img src="../img/Logo.svg" alt="Logo de Happy paws - El lugar de tus mascotas ">
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-pink sticky-top" id="botonera">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/Logo.svg" class="img-fluid" alt="Logo de Happy paws - El lugar de tus mascotas ">
             </a>
-            <ul>
-                <li>
-                    <a href="productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="promociones.html">Promociones</a>
-                </li>
-                <li>
-                    <a href="nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item lista-animada">
+                        <a class="nav-link active" href="../views/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item lista-animada">
+                        <a class="nav-link active" href="../views/promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item lista-animada">
+                        <a class="nav-link active" href="../views/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item lista-animada">
+                        <a class="nav-link active" href="../views/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <!-- HEADER -->
-        <header id="header">
-            <img src="../img/ConsultaPuppies.jpeg" alt="Logo de Happy paws - El lugar de tus mascotas ">
-        </header>
 
 
+    <main>
         <!-- SECCION CONTACTOS -->
-        <section id="contacto">
-            <form action="envio.php" class="form">
-                <h2 class="title">Contactanos:</h2>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="Nombre" placeholder="Nombre Apellido">
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="mailmail@mail.com">
-                <label for="telefono">Telefono:</label>
-                <input type="number" id="telefono" placeholder="11113333">
-                <label for="mensaje">Consulta o mensaje:</label>
-                <textarea name="textBox" id="mensaje" cols="30" rows="10"></textarea>
-                <input type="reset" value="Cancelar">
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-
-        <!-- SECCION MAPA -->
-        <section id="mapa">
-            <div class="mapaFlex">
-                <h2 class="title">Encontranos en nuestra sucursal:</h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26269.769176271322!2d-58.497591143854315!3d-34.61121219687287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9c29639d769%3A0x28098a82e56d4110!2sCamarones%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653869819378!5m2!1ses-419!2sar"
-                    width="40%" height="auto" style="border: double 2px black; margin-bottom: 10px;" allowfullscreen=""
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+        <section class="py-2">
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <h1 class="bg-softpink">Contactanos:</h1>
+                </div>
+                <div class="row bg-violet py-2 align-items-center">
+                    <article class="col-12 col-lg-7">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="Nombre" placeholder="Nombre Apellido">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="mailmail@mail.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Telefono:</label>
+                                <input type="number" class="form-control" id="telefono" placeholder="11113333">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Consulta o mensaje:</label>
+                                <textarea name="textBox" class="form-control" id="mensaje" cols="30"
+                                    rows="10"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-pink">Enviar</button>
+                                <button type="reset" class="btn btn-redpink">Cancelar</button>
+                            </div>
+                        </form>
+                    </article>
+                    <article class="col-12 col-lg-5 text-center">
+                        <h2 class="title">Encontranos en nuestra sucursal:</h2>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26269.769176271322!2d-58.497591143854315!3d-34.61121219687287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9c29639d769%3A0x28098a82e56d4110!2sCamarones%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653869819378!5m2!1ses-419!2sar"
+                            width="70%" height="auto" style="border: double 2px black; margin-bottom: 10px;"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </article>
+                </div>
             </div>
         </section>
+    </main>
 
-        <!-- FOOTER -->
-        <footer class="pie" id="footer">
-            <h4 class="pieText">Seguinos en nuestras redes sociales:</h4>
-            <div>
-                <a href="https://www.facebook.com/">
-                    <img src="../img/Facebook.svg" alt="Enlace a Facebook">
-                </a>
-                <a href="https://www.twitter.com/">
-                    <img src="../img/Twitter.svg" alt="Enlace a Twitter">
-                </a>
-                <a href="https://www.instagram.com/">
-                    <img src="../img/Instagram.svg" alt="Enlace a Instagram">
-                </a>
+
+
+
+    <!-- FOOTER -->
+    <footer id="footer" class="bg-pink py-4">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <h5>Seguinos en nuestras redes sociales:</h5>
+                <div>
+                    <a class="no-decoration" href="https://www.facebook.com/">
+                        <img src="../img/Facebook.svg" alt="Enlace a Facebook">
+                    </a>
+                    <a class="no-decoration" href="https://www.twitter.com/">
+                        <img src="../img/Twitter.svg" alt="Enlace a Twitter">
+                    </a>
+                    <a class="no-decoration" href="https://www.instagram.com/">
+                        <img src="../img/Instagram.svg" alt="Enlace a Instagram">
+                    </a>
+                </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

@@ -9,6 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Paws - El lugar de tus mascotas</title>
     <link rel="shortcut icon" href="img/favicon.png">
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- MY CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
 </head>
@@ -16,126 +20,208 @@
 <!-- BODY -->
 
 <body>
-    <!-- CONTENEDOR -->
-    <div class="contenedor">
-
-
-        <!-- NAV -->
-        <nav class="navBar" id="mainNav">
-            <a href="index.html">
-                <img src="img/Logo.svg" alt="Logo de Happy paws - El lugar de tus mascotas ">
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-pink sticky-top" id="botonera">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/Logo.svg" class="img-fluid" alt="Logo de Happy paws - El lugar de tus mascotas ">
             </a>
-            <ul>
-                <li>
-                    <a href="views/productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="views/promociones.html">Promociones</a>
-                </li>
-                <li>
-                    <a href="views/nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="views/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- HEADER -->
-        <header class="encabezado wow rotateInUpLeft" id="header">
-            <img src="img/header1.svg" alt="Foto mostrando a un perro disfutando de su jugete nuevo">
-        </header>
-
-        <!-- SECCION PRODUCTOS -->
-        <section id="productos">
-            <h2 class="title">Productos:</h2>
-            <div class="galeria wow fadeInDown">
-                <figure>
-                    <img src="img/juguete1.svg" alt="juguete de perro 1, forma de cono rellenable">
-                    <figcaption>Juguete rellenable forma de cono - Marca Kong</figcaption>
-                    <p>$1.700,00</p>
-                </figure>
-                <figure>
-                    <img src="img/juguete2.svg" alt="juguete de perro 2, pelota de tenis">
-                    <figcaption>Pelota de tenis para perros</figcaption>
-                    <p>$1.200,00</p>
-                </figure>
-                <figure>
-                    <img src="img/juguete3.svg" alt="juguete de perro 2, soga para perros">
-                    <figcaption>Soga para perros</figcaption>
-                    <p>$1.600,00</p>
-                </figure>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item lista-animada">
+                        <a class="nav-link active" href="views/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item lista-animada">
+                        <a class="nav-link active" href="views/promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item lista-animada">
+                        <a class="nav-link active" href="views/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item lista-animada">
+                        <a class="nav-link active" href="views/contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
-            <div class="galeria wow fadeInUp">
-                <figure>
-                    <img src="img/juguete4.svg" alt="pelota rellenable">
-                    <figcaption>Pelota rellenable</figcaption>
-                    <p>$1.700,00</p>
-                </figure>
-                <figure>
-                    <img src="img/juguete5.svg" alt="hueso de plastico con sonido">
-                    <figcaption>Hueso de plastico con sonido</figcaption>
-                    <p>$1.600,00</p>
-                </figure>
-                <figure>
-                    <img src="img/juguete6.svg" alt="hueso de plastico">
-                    <figcaption>Hueso de plastico</figcaption>
-                    <p>$1.700,00</p>
-                </figure>
+        </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <div id="carouselExampleControls" class="carousel slide w-75 mx-auto py-2" data-bs-ride="carousel">
+        <div class="carousel-inner border border-dark rounded">
+            <div class="carousel-item active">
+                <img src="img/header1.svg" class="d-block w-100"
+                    alt="Foto mostrando a un perro disfutando de su jugete nuevo">
+            </div>
+            <div class="carousel-item">
+                <img src="img/header2.svg" class="d-block w-100"
+                    alt="Foto mostrando a un perro disfutando de su jugete nuevo">
+            </div>
+            <div class="carousel-item">
+                <img src="img/header3.svg" class="d-block w-100"
+                    alt="Foto mostrando a un perro disfutando de su jugete nuevo">
+            </div>
+            <div class="carousel-item">
+                <img src="img/header4.svg" class="d-block w-100"
+                    alt="Foto mostrando a un perro disfutando de su jugete nuevo">
+            </div>
+            <div class="carousel-item">
+                <img src="img/header5.svg" class="d-block w-100"
+                    alt="Foto mostrando a un perro disfutando de su jugete nuevo">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <main>
+        <!-- SECCION PRODUCTOS -->
+        <section class="py-3">
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <h1 class="bg-softpink">Productos:</h1>
+                </div>
+                <div class="row text-center">
+                    <article class="col-12 col-md-6 col-lg-4 col-xl-4">
+                        <img src="img/juguete1.svg" class="img-fluid mb-1 border rounded"
+                            alt="juguete de perro 1, forma de cono rellenable">
+                        <div class="bg-pink rounded">
+                            <h6>Juguete rellenable forma de cono - Marca Kong</h6>
+                            <p>$1.700,00</p>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-4 col-xl-4">
+                        <img src="img/juguete2.svg" class="img-fluid mb-1 border rounded"
+                            alt="juguete de perro 2, pelota de tenis">
+                        <div class="bg-pink rounded">
+                            <h6>Pelota de tenis para perros</h6>
+                            <p>$1.200,00</p>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-4 col-xl-4">
+                        <img src="img/juguete3.svg" class="img-fluid mb-1 border rounded"
+                            alt="juguete de perro 2, soga para perros">
+                        <div class="bg-pink rounded">
+                            <h6>Soga para perros</h6>
+                            <p>$1.600,00</p>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-4 col-xl-4">
+                        <img src="img/juguete4.svg" class="img-fluid mb-1 border rounded" alt="pelota rellenable">
+                        <div class="bg-pink rounded">
+                            <h6>Pelota rellenable</h6>
+                            <p>$1.700,00</p>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-4 col-xl-4">
+                        <img src="img/juguete5.svg" class="img-fluid mb-1 border rounded"
+                            alt="hueso de plastico con sonido">
+                        <div class="bg-pink rounded">
+                            <h6>Hueso de plastico con sonido</h6>
+                            <p>$1.600,00</p>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-4 col-xl-4">
+                        <img src="img/juguete6.svg" class="img-fluid mb-1 border rounded" alt="hueso de plastico">
+                        <div class="bg-pink rounded">
+                            <h6>Hueso de plastico</h6>
+                            <p>$1.700,00</p>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
         <!-- SECCION CONTACTOS -->
-        <section class="wow fadeInLeft" id="contacto">
-            <form action="envio.php" class="form">
-                <h2 class="title">Contactanos:</h2>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="Nombre" placeholder="Nombre Apellido">
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="mailmail@mail.com">
-                <label for="telefono">Telefono:</label>
-                <input type="number" id="telefono" placeholder="11113333">
-                <label for="mensaje">Consulta o mensaje:</label>
-                <textarea name="textBox" id="mensaje" cols="30" rows="10"></textarea>
-                <input type="reset" value="Cancelar">
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-
-        <!-- SECCION MAPA -->
-        <section class="wow fadeInRight" id="mapa">
-            <div class="mapaFlex">
-                <h2 class="title">Encontranos en nuestra sucursal:</h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26269.769176271322!2d-58.497591143854315!3d-34.61121219687287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9c29639d769%3A0x28098a82e56d4110!2sCamarones%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653869819378!5m2!1ses-419!2sar"
-                    width="40%" height="auto" style="border: double 2px black; margin-bottom: 10px;" allowfullscreen=""
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+        <section class="py-3">
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <h1 class="bg-softpink">Contactanos:</h1>
+                </div>
+                <div class="row bg-violet py-2 align-items-center">
+                    <article class="col-12 col-lg-7">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="Nombre" placeholder="Nombre Apellido">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="mailmail@mail.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Telefono:</label>
+                                <input type="number" class="form-control" id="telefono" placeholder="11113333">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Consulta o mensaje:</label>
+                                <textarea name="textBox" class="form-control" id="mensaje" cols="30"
+                                    rows="10"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-pink">Enviar</button>
+                                <button type="reset" class="btn btn-redpink">Cancelar</button>
+                            </div>
+                        </form>
+                    </article>
+                    <article class="col-12 col-lg-5 text-center">
+                        <h2 class="title">Encontranos en nuestra sucursal:</h2>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26269.769176271322!2d-58.497591143854315!3d-34.61121219687287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9c29639d769%3A0x28098a82e56d4110!2sCamarones%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653869819378!5m2!1ses-419!2sar"
+                            width="70%" height="auto" style="border: double 2px black; margin-bottom: 10px;"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </article>
+                </div>
             </div>
         </section>
+    </main>
 
-        <!-- FOOTER -->
-        <footer class="pie" id="footer">
-            <h4 class="pieText">Seguinos en nuestras redes sociales:</h4>
-            <div>
-                <a href="https://www.facebook.com/">
-                    <img src="img/Facebook.svg" alt="Enlace a Facebook">
-                </a>
-                <a href="https://www.twitter.com/">
-                    <img src="img/Twitter.svg" alt="Enlace a Twitter">
-                </a>
-                <a href="https://www.instagram.com/">
-                    <img src="img/Instagram.svg" alt="Enlace a Instagram">
-                </a>
+
+
+
+    <!-- FOOTER -->
+    <footer id="footer" class="bg-pink py-4">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <h5>Seguinos en nuestras redes sociales:</h5>
+                <div>
+                    <a class="no-decoration" href="https://www.facebook.com/">
+                        <img src="img/Facebook.svg" alt="Enlace a Facebook">
+                    </a>
+                    <a class="no-decoration" href="https://www.twitter.com/">
+                        <img src="img/Twitter.svg" alt="Enlace a Twitter">
+                    </a>
+                    <a class="no-decoration" href="https://www.instagram.com/">
+                        <img src="img/Instagram.svg" alt="Enlace a Instagram">
+                    </a>
+                </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 
     <!-- SCRIPTS -->
     <script src="js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
