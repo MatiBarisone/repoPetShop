@@ -73,3 +73,19 @@ body {
         width: 200px;
     }
 }
+
+/* Keyframes en página Nosotros */
+@keyframes animacion{
+    0%{background-image: url(../img/pugFeliz.svg);}
+    50%{background-image: url(../img/gatoFeliz.svg);}
+    100%{background-image: url(../img/bulldogFeliz.svg);}
+}
+
+.animaciones{
+    height: 60vh;
+    animation-name: animacion;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    background-size: cover;
+    animation-timing-function: ease-out;
+}
