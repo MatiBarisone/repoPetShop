@@ -1,0 +1,27 @@
+// ==== nav bar ==== //
+#botonera img{
+    width: 270px;
+    @media (min-width: 260px) and (max-width: 366px){
+        width: 200px;
+    }
+}
+
+.lista-animada{
+    a{
+    /*Animacion de subrayado*/
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s ;
+    &:hover{
+        font-weight: 800;
+        /*Animacion de subrayado*/
+        background-size: 100% 2px;
+    }
+    }
+}
+
+.no-decoration{
+    text-decoration: none;
+}

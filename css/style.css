@@ -1,91 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
-
-/* Base html */
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif; }
 
 body {
-    background-image: url("../img/BackgroundPaws.png");
-    background-repeat: repeat;
-}
+  background-image: url("../img/BackgroundPaws.png");
+  background-repeat: repeat; }
 
-/* ID generales */
-#botonera img{
-    width: 270px;
-}
+.bg-pink {
+  background-color: #f7b0c8; }
 
-#footer img{
-    width: 30px;
-}
+.bg-softpink {
+  background-color: rgba(247, 176, 200, 0.8); }
 
-/* Clases generales */
-.bg-pink{
-    background-color: rgb(247, 176, 200);
-}
+.bg-violet {
+  background-color: rgba(238, 188, 247, 0.8); }
 
-.bg-softpink{
-    background-color: rgb(247, 176, 200, .8);
-}
+.btn-pink {
+  background-color: #ff5e94;
+  color: white; }
 
-.bg-violet{
-    background-color: rgb(238, 188, 247, .8);
-}
+.btn-redpink {
+  background-color: #ff0257;
+  color: white; }
 
-.btn-pink{
-    background-color: rgb(255, 94, 148);
-    color: white
-}
-
-.btn-redpink{
-    background-color: rgb(255, 2, 87);
-    color: white
-}
-
-.btn-redpink:hover{
-    color: rgb(194, 194, 194)
-}
-
-.lista-animada a {
-    /*Animacion de subrayado*/
-        background-image: linear-gradient(currentColor, currentColor);
-        background-position: 0% 100%;
-        background-repeat: no-repeat;
-        background-size: 0% 2px;
-        transition: background-size .3s ;
-}
-
-            .lista-animada a:hover {
-                font-weight: 800;
-                /*Animacion de subrayado*/
-                background-size: 100% 2px;
-            }
-
-.no-decoration{
-    text-decoration: none;
-}
-
-/* Media querys */
-@media (min-width: 260px) and (max-width: 366px){
-    #botonera img{
-        width: 200px;
-    }
-}
+.btn-redpink:hover {
+  color: #c2c2c2; }
 
 /* Keyframes en página Nosotros */
-@keyframes animacion{
-    0%{background-image: url(../img/pugFeliz.svg);}
-    50%{background-image: url(../img/gatoFeliz.svg);}
-    100%{background-image: url(../img/bulldogFeliz.svg);}
-}
+@keyframes animacion {
+  0% {
+    background-image: url(../img/pugFeliz.svg); }
+  50% {
+    background-image: url(../img/gatoFeliz.svg); }
+  100% {
+    background-image: url(../img/bulldogFeliz.svg); } }
 
-.animaciones{
-    height: 60vh;
-    animation-name: animacion;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    background-size: cover;
-    animation-timing-function: ease-out;
-}
+.animaciones {
+  height: 60vh;
+  animation-name: animacion;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  background-size: cover;
+  animation-timing-function: ease-out; }
+
+#botonera img {
+  width: 270px; }
+  @media (min-width: 260px) and (max-width: 366px) {
+    #botonera img {
+      width: 200px; } }
+
+.lista-animada a {
+  /*Animacion de subrayado*/
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s; }
+  .lista-animada a:hover {
+    font-weight: 800;
+    /*Animacion de subrayado*/
+    background-size: 100% 2px; }
+
+.no-decoration {
+  text-decoration: none; }
+
+#footer img {
+  width: 30px; }

@@ -1,0 +1,25 @@
+{
+  "name": "petshop_barisone",
+  "version": "1.0.0",
+  "description": "Trabajo para el curso de coder house.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/mainStyles.scss css/style.css",
+		"watch-css": "nodemon -e scss -x \"npm     run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatiBarisone/repoPetShop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatiBarisone/repoPetShop/issues"
+  },
+  "homepage": "https://github.com/MatiBarisone/repoPetShop#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

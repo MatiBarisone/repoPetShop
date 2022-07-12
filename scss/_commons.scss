@@ -1,0 +1,53 @@
+// ==== cosas comunes a todo el proyecto ==== //
+* {
+    padding: 0;
+    margin: 0;
+    font-family: $mainFont;
+}
+
+body {
+    background-image: url("../img/BackgroundPaws.png");
+    background-repeat: repeat;
+}
+
+.bg-pink{
+    background-color: $mainColor;
+}
+
+.bg-softpink{
+    background-color: $softMain;
+}
+
+.bg-violet{
+    background-color: $softSeconadryColor;
+}
+
+.btn-pink{
+    background-color: $keyColor;
+    color: $white;
+}
+
+.btn-redpink{
+    background-color: $dangerColor;
+    color: $white;
+}
+
+.btn-redpink:hover{
+    color: $grey;
+}
+
+/* Keyframes en página Nosotros */
+@keyframes animacion{
+    0%{background-image: url(../img/pugFeliz.svg);}
+    50%{background-image: url(../img/gatoFeliz.svg);}
+    100%{background-image: url(../img/bulldogFeliz.svg);}
+}
+
+.animaciones{
+    height: 60vh;
+    animation-name: animacion;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    background-size: cover;
+    animation-timing-function: ease-out;
+}
