@@ -29,6 +29,32 @@ body {
 .btn-redpink:hover {
   color: #c2c2c2; }
 
+/* Extend */
+.btn-base, .btn-rounded {
+  background-color: rgba(247, 176, 200, 0.8);
+  padding: 6px;
+  font-size: 1.5em; }
+  .btn-base:hover, .btn-rounded:hover {
+    background-color: #f7b0c8;
+    font-weight: 800; }
+
+.btn-rounded {
+  border-radius: 4px;
+  border: 2px double; }
+
+/* Mixins */
+.orden-parrafo {
+  font-size: 1em;
+  font-weight: 400;
+  color: black;
+  background-color: #eebcf7;
+  font-family: "Roboto", sans-serif;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center; }
+
 /* Keyframes en página Nosotros */
 @keyframes animacion {
   0% {

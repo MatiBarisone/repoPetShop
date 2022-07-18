@@ -1,0 +1,14 @@
+// ==== Mixins ==== //
+@mixin parrafo($size, $weight, $color, $colorfondo){
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    background-color: $colorfondo;
+
+    font-family: $mainFont;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
