@@ -57,58 +57,281 @@
 
     <main>
         <!-- SECCION PRODUCTOS -->
-        <section class="py-2">
+        <section>
             <div class="container-fluid">
                 <div class="row text-center">
-                    <h1 class="bg-softpink">Productos</h1>
+                    <h1 class="bg-softpink fw-bold py-2">Productos</h1>
                 </div>
-                <div class="row text-center">
-                    <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInDown">
-                        <img src="../img/juguete1.svg" class="img-fluid mb-1 border rounded"
-                            alt="juguete de perro 1, forma de cono rellenable">
-                        <div class="bg-pink rounded">
-                            <h6>Juguete rellenable forma de cono - Marca Kong</h6>
-                            <p>$1.700,00</p>
+                <div class="row">
+                    <div class="col-12 col-lg-2 col-xl-2 text-center">
+                        <div class="btn-group p-2 mb-2">
+                            <button class="btn btn-pink btn-lg dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Filtros
+                            </button>
+                            <ul class="dropdown-menu bg-violet">
+                                <div class="p-3 mb-2">
+                                    <form>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="comidaPerros">
+                                            <label class="form-check-label" for="comidaPerros">
+                                                Comida para Perros
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="comidaGatos">
+                                            <label class="form-check-label" for="comidaGatos">
+                                                Comida para Gatos
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="juguetesPerro">
+                                            <label class="form-check-label" for="juguetesPerro">
+                                                Juguetes para Perros
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="juguetesGato">
+                                            <label class="form-check-label" for="juguetesGato">
+                                                Juguetes para Gatos
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="juguetesHamster">
+                                            <label class="form-check-label" for="juguetesHamster">
+                                                Juguetes para Hamsters
+                                            </label>
+                                        </div>
+                                        <div class="text-center pt-1">
+                                            <button type="submit" class="btn btn-pink">Buscar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </ul>
                         </div>
-                    </article>
-                    <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInDown">
-                        <img src="../img/juguete2.svg" class="img-fluid mb-1 border rounded"
-                            alt="juguete de perro 2, pelota de tenis">
-                        <div class="bg-pink rounded">
-                            <h6>Pelota de tenis para perros</h6>
-                            <p>$1.200,00</p>
+                    </div>
+                    <div class="col-12 col-lg-10 col-xl-10">
+                        <div class="container-fluid">
+                            <div class="row text-center">
+                                <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInDown">
+                                    <img src="../img/comida1.svg" class="img-fluid mb-1 border rounded"
+                                        alt="comida para gatos 1 - pro plan">
+                                    <div class="bg-pink rounded">
+                                        <h6>Salsa de salmon para gatos - Pro Plan</h6>
+                                        <p>$900,00</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <a class="btn btn-rounded px-5 mb-3" href="../views/productos.html" role="button"> Agregar al
+                                            carro </a>
+                                    </div>
+                                </article>
+                                <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInDown">
+                                    <img src="../img/comida2.svg" class="img-fluid mb-1 border rounded"
+                                        alt="comida para gatos 2 - pro plan">
+                                    <div class="bg-pink rounded">
+                                        <h6>Comida para gatos - Pro Plan</h6>
+                                        <p>$1.250,00</p>
+                                    </div>
+                                    <div class="text-center ">
+                                        <a class="btn btn-rounded px-5 mb-3" href="../views/productos.html" role="button"> Agregar al
+                                            carro </a>
+                                    </div>
+                                </article>
+                                <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInDown">
+                                    <img src="../img/comida3.svg" class="img-fluid mb-1 border rounded"
+                                        alt="comida para gatos 3 - pro plan">
+                                    <div class="bg-pink rounded">
+                                        <h6>Comida para gatos adultos - Pro Plan</h6>
+                                        <p>$1.300,00</p>
+                                    </div>
+                                    <div class="text-center ">
+                                        <a class="btn btn-rounded px-5 mb-3" href="../views/productos.html" role="button"> Agregar al
+                                            carro </a>
+                                    </div>
+                                </article>
+                                <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInDown">
+                                    <img src="../img/comida4.svg" class="img-fluid mb-1 border rounded"
+                                        alt="comida para perros 1 - pro plan">
+                                    <div class="bg-pink rounded">
+                                        <h6>Comida para perros bebes - Pro Plan</h6>
+                                        <p>$1.000,00</p>
+                                    </div>
+                                    <div class="text-center ">
+                                        <a class="btn btn-rounded px-5 mb-3" href="../views/productos.html" role="button"> Agregar al
+                                            carro </a>
+                                    </div>
+                                </article>
+                                <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInDown">
+                                    <img src="../img/comida5.svg" class="img-fluid mb-1 border rounded"
+                                        alt="comida para perros 2 - pro plan">
+                                    <div class="bg-pink rounded">
+                                        <h6>Comida para perros adultos - Pro Plan</h6>
+                                        <p>$1.300,00</p>
+                                    </div>
+                                    <div class="text-center ">
+                                        <a class="btn btn-rounded px-5 mb-3" href="../views/productos.html" role="button"> Agregar al
+                                            carro </a>
+                                    </div>
+                                </article>
+                                <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInDown">
+                                    <img src="../img/comida6.svg" class="img-fluid mb-1 border rounded"
+                                        alt="comida para perros 3 - pro plan">
+                                    <div class="bg-pink rounded">
+                                        <h6>Comida para perros ancianos - Pro Plan</h6>
+                                        <p>$1.350,00</p>
+                                    </div>
+                                    <div class="text-center ">
+                                        <a class="btn btn-rounded px-5 mb-3" href="../views/productos.html" role="button"> Agregar al
+                                            carro </a>
+                                    </div>
+                                </article>
+                                <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInDown">
+                                    <img src="../img/juguete9.svg" class="img-fluid mb-1 border rounded"
+                                        alt="juguete para gatos 2, cono con pelotas">
+                                    <div class="bg-pink rounded">
+                                        <h6 class="pt-1">Juguete para gatos - Cono con pelotas</h6>
+                                        <p>$1.500,00</p>
+                                    </div>
+                                    <div class="text-center ">
+                                        <a class="btn btn-rounded px-5 mb-3" href="../views/productos.html" role="button"> Agregar al
+                                            carro </a>
+                                    </div>
+                                </article>
+                                <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInDown">
+                                    <img src="../img/juguete2.svg" class="img-fluid mb-1 border rounded"
+                                        alt="juguete de perro 2, pelota de tenis">
+                                    <div class="bg-pink rounded">
+                                        <h6 class="pt-1">Pelota de tenis para perros</h6>
+                                        <p>$1.200,00</p>
+                                    </div>
+                                    <div class="text-center ">
+                                        <a class="btn btn-rounded px-5 mb-3" href="../views/productos.html" role="button"> Agregar al
+                                            carro </a>
+                                    </div>
+                                </article>
+                                <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInDown">
+                                    <img src="../img/juguete11.svg" class="img-fluid mb-1 border rounded"
+                                        alt="juguete de Hamster, bola para que se mueva">
+                                    <div class="bg-pink rounded">
+                                        <h6 class="pt-1">Bola de Hamster</h6>
+                                        <p>$800,00</p>
+                                    </div>
+                                    <div class="text-center ">
+                                        <a class="btn btn-rounded px-5 mb-3" href="../views/productos.html" role="button"> Agregar al
+                                            carro </a>
+                                    </div>
+                                </article>
+                                <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInDown">
+                                    <img src="../img/juguete1.svg" class="img-fluid mb-1 border rounded"
+                                        alt="juguete de perro 1, forma de cono rellenable">
+                                    <div class="bg-pink rounded">
+                                        <h6 class="pt-1">Cono rellenable - Marca Kong</h6>
+                                        <p>$1.700,00</p>
+                                    </div>
+                                    <div class="text-center ">
+                                        <a class="btn btn-rounded px-5 mb-3" href="../views/productos.html" role="button"> Agregar al
+                                            carro </a>
+                                    </div>
+                                </article>
+                                <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInDown">
+                                    <img src="../img/juguete7.svg" class="img-fluid mb-1 border rounded"
+                                        alt="juguete de gato 1, caña de pescar con una pluma de carnada">
+                                    <div class="bg-pink rounded">
+                                        <h6 class="pt-1">Caña de pescar para gatos</h6>
+                                        <p>$1.300,00</p>
+                                    </div>
+                                    <div class="text-center ">
+                                        <a class="btn btn-rounded px-5 mb-3" href="../views/productos.html" role="button"> Agregar al
+                                            carro </a>
+                                    </div>
+                                </article>
+                                <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInDown">
+                                    <img src="../img/juguete10.svg" class="img-fluid mb-1 border rounded"
+                                        alt="juguete de Hamster 1, rueda para correr">
+                                    <div class="bg-pink rounded">
+                                        <h6 class="pt-1">Rueda para Hamster</h6>
+                                        <p>$1.000,00</p>
+                                    </div>
+                                    <div class="text-center ">
+                                        <a class="btn btn-rounded px-5 mb-3" href="../views/productos.html" role="button"> Agregar al
+                                            carro </a>
+                                    </div>
+                                </article>
+                                <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInDown">
+                                    <img src="../img/juguete3.svg" class="img-fluid mb-1 border rounded"
+                                        alt="juguete de perro 3, soga para perros">
+                                    <div class="bg-pink rounded">
+                                        <h6 class="pt-1">Soga para perros</h6>
+                                        <p>$1.600,00</p>
+                                    </div>
+                                    <div class="text-center ">
+                                        <a class="btn btn-rounded px-5 mb-3" href="../views/productos.html" role="button"> Agregar al
+                                            carro </a>
+                                    </div>
+                                </article>
+                                <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInDown">
+                                    <img src="../img/juguete8.svg" class="img-fluid mb-1 border rounded"
+                                        alt="juguete de gato 3, bola de mimbre">
+                                    <div class="bg-pink rounded">
+                                        <h6 class="pt-1">Bola de mimbre para gatos</h6>
+                                        <p>$1.000,00</p>
+                                    </div>
+                                    <div class="text-center ">
+                                        <a class="btn btn-rounded px-5 mb-3" href="../views/productos.html" role="button"> Agregar al
+                                            carro </a>
+                                    </div>
+                                </article>
+                                <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInDown">
+                                    <img src="../img/juguete4.svg" class="img-fluid mb-1 border rounded"
+                                        alt="juguete de perro 4, pelota rellenable">
+                                    <div class="bg-pink rounded">
+                                        <h6 class="pt-1">Pelota rellenable</h6>
+                                        <p>$1.700,00</p>
+                                    </div>
+                                    <div class="text-center ">
+                                        <a class="btn btn-rounded px-5 mb-3" href="../views/productos.html" role="button"> Agregar al
+                                            carro </a>
+                                    </div>
+                                </article>
+                                <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInDown">
+                                    <img src="../img/juguete5.svg" class="img-fluid mb-1 border rounded"
+                                        alt="juguete de perro 5, hueso de plastico con sonido">
+                                    <div class="bg-pink rounded">
+                                        <h6 class="pt-1">Hueso de plastico con sonido</h6>
+                                        <p>$1.600,00</p>
+                                    </div>
+                                    <div class="text-center ">
+                                        <a class="btn btn-rounded px-5 mb-3" href="../views/productos.html" role="button"> Agregar al
+                                            carro </a>
+                                    </div>
+                                </article>
+                                <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInDown">
+                                    <img src="../img/juguete12.svg" class="img-fluid mb-1 border rounded"
+                                        alt="juguete de gato 4, ratones de lana">
+                                    <div class="bg-pink rounded">
+                                        <h6 class="pt-1">Ratones de lana para gatos</h6>
+                                        <p>$1.100,00</p>
+                                    </div>
+                                    <div class="text-center ">
+                                        <a class="btn btn-rounded px-5 mb-3" href="../views/productos.html" role="button"> Agregar al
+                                            carro </a>
+                                    </div>
+                                </article>
+                                <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInDown">
+                                    <img src="../img/juguete6.svg" class="img-fluid mb-1 border rounded"
+                                        alt="juguete de perro 6, hueso de plastico negro">
+                                    <div class="bg-pink rounded">
+                                        <h6 class="pt-1">Hueso de plastico</h6>
+                                        <p>$1.700,00</p>
+                                    </div>
+                                    <div class="text-center ">
+                                        <a class="btn btn-rounded px-5 mb-3" href="../views/productos.html" role="button"> Agregar al
+                                            carro </a>
+                                    </div>
+                                </article>
+                            </div>
                         </div>
-                    </article>
-                    <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInDown">
-                        <img src="../img/juguete3.svg" class="img-fluid mb-1 border rounded"
-                            alt="juguete de perro 2, soga para perros">
-                        <div class="bg-pink rounded">
-                            <h6>Soga para perros</h6>
-                            <p>$1.600,00</p>
-                        </div>
-                    </article>
-                    <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInUp">
-                        <img src="../img/juguete4.svg" class="img-fluid mb-1 border rounded" alt="pelota rellenable">
-                        <div class="bg-pink rounded">
-                            <h6>Pelota rellenable</h6>
-                            <p>$1.700,00</p>
-                        </div>
-                    </article>
-                    <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInUp">
-                        <img src="../img/juguete5.svg" class="img-fluid mb-1 border rounded"
-                            alt="hueso de plastico con sonido">
-                        <div class="bg-pink rounded">
-                            <h6>Hueso de plastico con sonido</h6>
-                            <p>$1.600,00</p>
-                        </div>
-                    </article>
-                    <article class="col-12 col-md-6 col-lg-4 col-xl-4 wow fadeInUp">
-                        <img src="../img/juguete6.svg" class="img-fluid mb-1 border rounded" alt="hueso de plastico">
-                        <div class="bg-pink rounded">
-                            <h6>Hueso de plastico</h6>
-                            <p>$1.700,00</p>
-                        </div>
-                    </article>
+                    </div>
                 </div>
             </div>
         </section>
@@ -117,19 +340,75 @@
     <!-- FOOTER -->
     <footer id="footer" class="bg-pink py-4">
         <div class="container-fluid">
-            <div class="row text-center">
-                <h5>Seguinos en nuestras redes sociales:</h5>
-                <div>
-                    <a class="no-decoration" href="https://www.facebook.com/">
-                        <img src="../img/Facebook.svg" alt="Enlace a Facebook">
-                    </a>
-                    <a class="no-decoration" href="https://www.twitter.com/">
-                        <img src="../img/Twitter.svg" alt="Enlace a Twitter">
-                    </a>
-                    <a class="no-decoration" href="https://www.instagram.com/">
-                        <img src="../img/Instagram.svg" alt="Enlace a Instagram">
-                    </a>
-                </div>
+            <div class="row">
+                <article class="col-12 col-lg-4 border-footer pt-2">
+                    <h5 class="text-center">Seguinos en nuestras redes sociales:</h5>
+                    <div class="px-4">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <a class="no-decoration d-flex align-items-center" href="https://www.facebook.com/">
+                                    <img src="../img/Facebook.svg" class="me-2" alt="Enlace a Facebook">
+                                    <h6 class="text-center text-dark pt-2 ">Facebook de Happy Paws</h6>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a class="no-decoration d-flex align-items-center" href="https://www.twitter.com/">
+                                    <img src="../img/Twitter.svg" class="me-2" alt="Enlace a Twitter">
+                                    <h6 class="text-center text-dark pt-2">Twitter de Happy Paws</h6>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a class="no-decoration d-flex align-items-center" href="https://www.instagram.com/">
+                                    <img src="../img/Instagram.svg" class="me-2" alt="Enlace a Instagram">
+                                    <h6 class="text-center text-dark pt-2">Instagram de Happy Paws</h6>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="col-12 col-lg-4 border-footer pt-2">
+                    <h5 class="text-center">Contactanos:</h5>
+                    <div class="px-4">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center">
+                                <img src="../img/Telefono.svg" class="rounded-circle me-2"
+                                    alt="Icono de telefono celular">
+                                <h6 class="text-center text-dark pt-2">8888-111-6666</h6>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <img src="../img/Mail.svg" class="me-2" alt="Icono de Mail">
+                                <h6 class="text-center text-dark pt-2">happypaws@gmail.com</h6>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="col-12 col-lg-4 pt-2">
+                    <h5 class="text-center">Seguí navegando:</h5>
+                    <div class="px-4">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <a class="no-decoration d-flex align-items-center justify-content-center"
+                                    href="../index.html">
+                                    <h6 class="text-center text-dark pt-2">Inicio</h6>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a class="no-decoration d-flex align-items-center justify-content-center"
+                                    href="../views/promociones.html">
+                                    <h6 class="text-center text-dark pt-2">Promociones</h6>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a class="no-decoration d-flex align-items-center justify-content-center"
+                                    href="../views/nosotros.html">
+                                    <h6 class="text-center text-dark pt-2">Nosotros</h6>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="col-12 col-lg-4">
+                </article>
             </div>
         </div>
     </footer>

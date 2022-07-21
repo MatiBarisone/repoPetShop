@@ -2,3 +2,11 @@
 #footer img{
     width: 30px;
 }
+
+.border-footer{
+    border-right: 1px double;
+    border-color: black;
+    @media (min-width: 260px) and (max-width: 991px){
+        border: none;
+    }
+}

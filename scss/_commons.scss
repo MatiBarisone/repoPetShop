@@ -18,8 +18,12 @@ body {
     background-color: map-get($map: $colores, $key: 'soft-pink');
 }
 
-.bg-violet{
+.bg-softviolet{
     background-color: map-get($map: $colores, $key: 'soft-violet');
+}
+
+.bg-violet{
+    background-color: map-get($map: $colores, $key: 'violet');
 }
 
 .btn-pink{
@@ -56,20 +60,4 @@ body {
 /* Mixins */
 .orden-parrafo{
     @include parrafo($textMd, $normal, map-get($map: $colores, $key: 'black'), map-get($map: $colores, $key: 'violet'))
-}
-
-/* Keyframes en página Nosotros */
-@keyframes animacion{
-    0%{background-image: url(../img/pugFeliz.svg);}
-    50%{background-image: url(../img/gatoFeliz.svg);}
-    100%{background-image: url(../img/bulldogFeliz.svg);}
-}
-
-.animaciones{
-    height: 60vh;
-    animation-name: animacion;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    background-size: cover;
-    animation-timing-function: ease-out;
 }
